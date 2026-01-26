@@ -1,0 +1,18 @@
+
+<Project>
+  <ItemGroup>
+    <!-- EF Core (MISMA versión exacta) -->
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="8.0.16" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.16" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.16" />
+
+    <!-- Identity EF (arrastra EFCore.Relational 8.0.16) -->
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.16" />
+
+    <!-- JWT & Serilog -->
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.16" />
+    <PackageVersion Include="Serilog.AspNetCore" Version="8.0.3" />
+    <PackageVersion Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageVersion Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\bin\Debug\net8.0\MiniErp.Application.deps.json
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\bin\Debug\net8.0\MiniErp.Application.dll
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\bin\Debug\net8.0\MiniErp.Application.pdb
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\bin\Debug\net8.0\MiniErp.Domain.dll
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\bin\Debug\net8.0\MiniErp.Domain.pdb
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.csproj.AssemblyReference.cache
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.AssemblyInfoInputs.cache
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.AssemblyInfo.cs
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.csproj.CoreCompileInputs.cache
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp..8020D044.Up2Date
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.dll
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\refint\MiniErp.Application.dll
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.pdb
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\ref\MiniErp.Application.dll
