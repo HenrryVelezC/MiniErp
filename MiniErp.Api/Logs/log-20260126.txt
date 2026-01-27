@@ -1,1 +1,944 @@
 2026-01-26 11:05:09.199 -05:00 [INF] Application is shutting down...
+2026-01-26 14:24:18.898 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 14:24:18.951 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 14:24:18.966 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 14:24:18.993 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 14:24:19.008 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 14:24:19.155 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:24:19.194 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:24:19.199 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:24:19.205 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 14:24:19.276 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-01-26 14:24:19.455 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 14:24:19.458 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 14:24:19.460 -05:00 [INF] Hosting environment: Development
+2026-01-26 14:24:19.460 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 14:26:14.684 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 14:26:14.773 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 91.1654ms
+2026-01-26 14:26:14.851 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 14:26:14.876 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.7505ms
+2026-01-26 14:39:12.467 -05:00 [INF] Application is shutting down...
+2026-01-26 14:54:59.817 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 14:54:59.855 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 14:54:59.870 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 14:54:59.883 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 14:54:59.901 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 14:55:00.046 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:55:00.091 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:55:00.095 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:55:00.145 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 14:55:00.319 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 14:55:00.322 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 14:55:00.322 -05:00 [INF] Hosting environment: Development
+2026-01-26 14:55:00.323 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 14:55:29.225 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 14:55:29.361 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 139.9128ms
+2026-01-26 14:55:29.442 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 14:55:29.531 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.0117ms
+2026-01-26 14:56:12.622 -05:00 [INF] Application is shutting down...
+2026-01-26 14:57:06.453 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 14:57:06.501 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 14:57:06.514 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 14:57:06.528 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 14:57:06.547 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 14:57:06.688 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:57:06.729 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:57:06.732 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 14:57:06.744 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 14:57:06.889 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 14:57:06.893 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 14:57:06.895 -05:00 [INF] Hosting environment: Development
+2026-01-26 14:57:06.896 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 14:57:21.026 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 14:57:21.147 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 123.035ms
+2026-01-26 14:57:21.234 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 14:57:21.325 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.5064ms
+2026-01-26 14:59:10.039 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 65
+2026-01-26 14:59:10.051 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 14:59:10.067 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 14:59:10.092 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 14:59:10.151 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 52.8233ms
+2026-01-26 14:59:10.153 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 14:59:10.155 -05:00 [ERR] HTTP POST /api/Auth/login responded 500 in 105.1986 ms
+System.InvalidOperationException: Record type 'MiniErp.Api.Controllers.LoginDto' has validation metadata defined on property 'Password' that will be ignored. 'Password' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.Enumerator..ctor(ModelMetadata modelMetadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.GetChildren(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-01-26 14:59:10.178 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Record type 'MiniErp.Api.Controllers.LoginDto' has validation metadata defined on property 'Password' that will be ignored. 'Password' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.Enumerator..ctor(ModelMetadata modelMetadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.GetChildren(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-26 14:59:10.200 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 500 null text/plain; charset=utf-8 160.6546ms
+2026-01-26 15:03:24.701 -05:00 [INF] Application is shutting down...
+2026-01-26 15:03:44.407 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 15:03:44.458 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 15:03:44.470 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 15:03:44.487 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 15:03:44.509 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 15:03:44.668 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 15:03:44.712 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 15:03:44.722 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 15:03:44.743 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 15:03:44.878 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 15:03:44.881 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 15:03:44.882 -05:00 [INF] Hosting environment: Development
+2026-01-26 15:03:44.883 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 15:03:48.875 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 15:03:48.966 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 91.656ms
+2026-01-26 15:03:49.108 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 15:03:49.172 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.6812ms
+2026-01-26 15:04:21.692 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 65
+2026-01-26 15:04:21.700 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 15:04:21.712 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 15:04:21.732 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 15:04:21.816 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-01-26 15:04:21.944 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 15:04:21.982 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 15:04:21.997 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 260.644ms
+2026-01-26 15:04:21.998 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 15:04:22.001 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 300.1068 ms
+2026-01-26 15:04:22.008 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 315.9327ms
+2026-01-26 15:44:45.191 -05:00 [INF] Application is shutting down...
+2026-01-26 15:48:44.083 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 15:48:44.121 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 15:48:44.134 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 15:48:44.147 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 15:48:44.163 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 15:48:44.297 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 15:48:44.333 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 15:48:44.339 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 15:48:44.347 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 15:48:44.489 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 15:48:44.492 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 15:48:44.492 -05:00 [INF] Hosting environment: Development
+2026-01-26 15:48:44.493 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 15:48:56.920 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 15:48:57.041 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 124.6006ms
+2026-01-26 15:48:57.201 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 15:48:57.278 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.9593ms
+2026-01-26 15:50:18.394 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 65
+2026-01-26 15:50:18.400 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 15:50:18.411 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 15:50:18.428 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 15:50:18.494 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-01-26 15:50:18.592 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 15:50:18.615 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 15:50:18.628 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 195.5911ms
+2026-01-26 15:50:18.629 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 15:50:18.632 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 231.6858 ms
+2026-01-26 15:50:18.637 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 243.2762ms
+2026-01-26 15:52:23.187 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 91
+2026-01-26 15:52:23.209 -05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-01-26 15:52:23.215 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-01-26 15:52:23.216 -05:00 [INF] HTTP POST /api/Auth/register responded 302 in 24.1479 ms
+2026-01-26 15:52:23.218 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 302 0 null 31.1932ms
+2026-01-26 15:52:23.223 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2Fapi%2FAuth%2Fregister - null null
+2026-01-26 15:52:23.230 -05:00 [INF] HTTP GET /Account/Login responded 404 in 2.9370 ms
+2026-01-26 15:52:23.232 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2Fapi%2FAuth%2Fregister - 404 0 null 8.1376ms
+2026-01-26 15:52:23.235 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/Account/Login, Response status code: 404
+2026-01-26 15:53:36.341 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Auth/me - null null
+2026-01-26 15:53:36.345 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 15:53:36.347 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-01-26 15:53:36.349 -05:00 [INF] HTTP GET /api/Auth/me responded 302 in 4.8666 ms
+2026-01-26 15:53:36.352 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Auth/me - 302 0 null 10.6951ms
+2026-01-26 15:53:36.357 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2Fapi%2FAuth%2Fme - null null
+2026-01-26 15:53:36.361 -05:00 [INF] HTTP GET /Account/Login responded 404 in 0.1449 ms
+2026-01-26 15:53:36.363 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2Fapi%2FAuth%2Fme - 404 0 null 6.1052ms
+2026-01-26 15:53:36.369 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/Account/Login, Response status code: 404
+2026-01-26 16:02:05.028 -05:00 [INF] Application is shutting down...
+2026-01-26 16:03:10.149 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 16:03:10.186 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 16:03:10.199 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 16:03:10.215 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 16:03:10.232 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 16:03:10.378 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 16:03:10.413 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 16:03:10.417 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 16:03:10.425 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 16:03:10.528 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 16:03:10.532 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 16:03:10.533 -05:00 [INF] Hosting environment: Development
+2026-01-26 16:03:10.533 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 16:03:14.618 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 16:03:14.710 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 91.0616ms
+2026-01-26 16:03:14.845 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 16:03:14.922 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.8227ms
+2026-01-26 16:12:16.284 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 65
+2026-01-26 16:12:16.293 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 16:12:16.303 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 16:12:16.322 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 16:12:16.390 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-01-26 16:12:16.496 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 16:12:16.526 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 16:12:16.543 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 215.2547ms
+2026-01-26 16:12:16.544 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 16:12:16.548 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 253.0852 ms
+2026-01-26 16:12:16.555 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 271.3519ms
+2026-01-26 16:13:23.183 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 90
+2026-01-26 16:13:23.193 -05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-01-26 16:13:23.199 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-01-26 16:13:23.200 -05:00 [INF] HTTP POST /api/Auth/register responded 302 in 14.0242 ms
+2026-01-26 16:13:23.203 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 302 0 null 19.5575ms
+2026-01-26 16:13:23.207 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2Fapi%2FAuth%2Fregister - null null
+2026-01-26 16:13:23.213 -05:00 [INF] HTTP GET /Account/Login responded 404 in 1.7770 ms
+2026-01-26 16:13:23.215 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2Fapi%2FAuth%2Fregister - 404 0 null 7.8745ms
+2026-01-26 16:13:23.217 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/Account/Login, Response status code: 404
+2026-01-26 17:46:06.031 -05:00 [INF] Application is shutting down...
+2026-01-26 17:46:26.612 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 17:46:26.647 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 17:46:26.661 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 17:46:26.673 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 17:46:26.686 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 17:46:26.823 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 17:46:26.852 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 17:46:26.857 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 17:46:26.867 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 17:46:26.992 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 17:46:26.996 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 17:46:26.998 -05:00 [INF] Hosting environment: Development
+2026-01-26 17:46:27.000 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 17:46:30.918 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 17:46:31.025 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 106.887ms
+2026-01-26 17:46:31.176 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 17:46:31.245 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.9985ms
+2026-01-26 17:46:58.055 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 65
+2026-01-26 17:46:58.063 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 17:46:58.074 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 17:46:58.091 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 17:46:58.172 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-01-26 17:46:58.951 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 17:46:59.449 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 17:46:59.471 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 1374.0892ms
+2026-01-26 17:46:59.473 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 17:46:59.480 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 1414.0201 ms
+2026-01-26 17:46:59.488 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 1432.3654ms
+2026-01-26 17:47:47.754 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 91
+2026-01-26 17:47:47.773 -05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-01-26 17:47:47.778 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-01-26 17:47:47.779 -05:00 [INF] HTTP POST /api/Auth/register responded 401 in 14.9229 ms
+2026-01-26 17:47:47.782 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 401 0 null 27.163ms
+2026-01-26 18:53:52.168 -05:00 [INF] Application is shutting down...
+2026-01-26 18:54:00.655 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 18:54:00.707 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 18:54:00.721 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 18:54:00.743 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 18:54:00.771 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 18:54:01.052 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 18:54:01.105 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 18:54:01.108 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 18:54:01.117 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 18:54:01.283 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 18:54:01.287 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 18:54:01.289 -05:00 [INF] Hosting environment: Development
+2026-01-26 18:54:01.290 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 18:54:05.587 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 18:54:05.681 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 94.2836ms
+2026-01-26 18:54:05.870 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 18:54:05.956 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.744ms
+2026-01-26 18:54:24.689 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 65
+2026-01-26 18:54:24.698 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 18:54:25.075 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 18:54:25.102 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 18:54:25.176 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-01-26 18:54:25.278 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 18:54:25.300 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 18:54:25.311 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 204.7348ms
+2026-01-26 18:54:25.312 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 18:54:25.316 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 618.2536 ms
+2026-01-26 18:54:25.324 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 635.2252ms
+2026-01-26 18:55:18.150 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 90
+2026-01-26 18:55:18.166 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'IDX10820: Invalid character found in Base64UrlEncoding. Character: '123', Encoding: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.')
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode(String input, Int32 offset, Int32 length, Byte[] output)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode[T](String input, Int32 offset, Int32 length, Func`3 action)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(String rawString, Int32 startIndex, Int32 length, Func`3 action)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2026-01-26 18:55:18.200 -05:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-01-26 18:55:18.204 -05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-01-26 18:55:18.210 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 18:55:18.212 -05:00 [INF] HTTP POST /api/Auth/register responded 401 in 56.3697 ms
+2026-01-26 18:55:18.214 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 401 0 null 63.8021ms
+2026-01-26 18:58:19.970 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 90
+2026-01-26 18:58:19.999 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Register (MiniErp.Api)'
+2026-01-26 18:58:20.007 -05:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(MiniErp.Api.Controllers.RegisterDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 18:58:20.026 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Register (MiniErp.Api) in 17.3501ms
+2026-01-26 18:58:20.028 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Register (MiniErp.Api)'
+2026-01-26 18:58:20.029 -05:00 [ERR] HTTP POST /api/Auth/register responded 500 in 56.4082 ms
+System.InvalidOperationException: Record type 'MiniErp.Api.Controllers.RegisterDto' has validation metadata defined on property 'Password' that will be ignored. 'Password' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.Enumerator..ctor(ModelMetadata modelMetadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.GetChildren(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-01-26 18:58:20.040 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Record type 'MiniErp.Api.Controllers.RegisterDto' has validation metadata defined on property 'Password' that will be ignored. 'Password' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.Enumerator..ctor(ModelMetadata modelMetadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.GetChildren(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-26 18:58:20.055 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 500 null text/plain; charset=utf-8 84.4231ms
+2026-01-26 19:06:42.698 -05:00 [INF] Application is shutting down...
+2026-01-26 19:06:50.369 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 19:06:50.410 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 19:06:50.421 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 19:06:50.435 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 19:06:50.451 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 19:06:50.612 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:06:50.659 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:06:50.664 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:06:50.676 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 19:06:50.821 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 19:06:50.824 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 19:06:50.826 -05:00 [INF] Hosting environment: Development
+2026-01-26 19:06:50.827 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 19:06:54.375 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 19:06:54.462 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 88.0756ms
+2026-01-26 19:06:54.605 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 19:06:54.666 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.4926ms
+2026-01-26 19:07:00.887 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 19:07:00.890 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 3.3984ms
+2026-01-26 19:07:00.960 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 19:07:00.969 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.6656ms
+2026-01-26 19:07:36.634 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 64
+2026-01-26 19:07:36.641 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 19:07:36.659 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 19:07:36.682 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 19:07:36.753 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-01-26 19:07:36.855 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 19:07:36.877 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 19:07:36.894 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 207.0691ms
+2026-01-26 19:07:36.897 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 19:07:36.899 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 258.3603 ms
+2026-01-26 19:07:36.904 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 269.4244ms
+2026-01-26 19:08:28.019 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 91
+2026-01-26 19:08:28.055 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Register (MiniErp.Api)'
+2026-01-26 19:08:28.062 -05:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(MiniErp.Api.Controllers.RegisterDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 19:08:28.210 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2026-01-26 19:08:28.298 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 6), @p4='?' (Size = 19), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 19), @p9='?' (Size = 19), @p10='?' (Size = 84), @p11='?', @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "DisplayName", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2026-01-26 19:08:28.311 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-01-26 19:08:28.329 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__get_Item_0 AND "a"."RoleId" = @__get_Item_1
+LIMIT 1
+2026-01-26 19:08:28.334 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-01-26 19:08:28.347 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2026-01-26 19:08:28.374 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+2026-01-26 19:08:28.382 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p15='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p16='?' (Size = 36), @p2='?' (Size = 6), @p3='?' (Size = 19), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 19), @p8='?' (Size = 19), @p9='?' (Size = 84), @p10='?', @p11='?' (DbType = Boolean), @p12='?' (Size = 32), @p13='?' (DbType = Boolean), @p14='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "DisplayName" = @p2, "Email" = @p3, "EmailConfirmed" = @p4, "LockoutEnabled" = @p5, "LockoutEnd" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "SecurityStamp" = @p12, "TwoFactorEnabled" = @p13, "UserName" = @p14
+WHERE "Id" = @p15 AND "ConcurrencyStamp" = @p16
+RETURNING 1;
+2026-01-26 19:08:28.392 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 19:08:28.396 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Register (MiniErp.Api) in 333.0067ms
+2026-01-26 19:08:28.397 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Register (MiniErp.Api)'
+2026-01-26 19:08:28.399 -05:00 [INF] HTTP POST /api/Auth/register responded 200 in 376.4865 ms
+2026-01-26 19:08:28.401 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 200 null application/json; charset=utf-8 382.1929ms
+2026-01-26 19:09:15.263 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Auth/me - null null
+2026-01-26 19:09:15.271 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Me (MiniErp.Api)'
+2026-01-26 19:09:15.275 -05:00 [INF] Route matched with {action = "Me", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Me() on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 19:09:15.320 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__get_Item_0
+LIMIT 1
+2026-01-26 19:09:15.359 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 19:09:15.363 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 19:09:15.374 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Me (MiniErp.Api) in 96.1436ms
+2026-01-26 19:09:15.387 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Me (MiniErp.Api)'
+2026-01-26 19:09:15.388 -05:00 [INF] HTTP GET /api/Auth/me responded 200 in 120.7647 ms
+2026-01-26 19:09:15.391 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Auth/me - 200 null application/json; charset=utf-8 127.7291ms
+2026-01-26 19:16:34.191 -05:00 [INF] Application is shutting down...
+2026-01-26 19:16:42.272 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 19:16:42.313 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 19:16:42.326 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 19:16:42.340 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 19:16:42.360 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 19:16:42.504 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:16:42.544 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:16:42.549 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:16:42.561 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 19:16:42.704 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 19:16:42.707 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 19:16:42.708 -05:00 [INF] Hosting environment: Development
+2026-01-26 19:16:42.708 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 19:16:48.125 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 19:16:48.225 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 100.1229ms
+2026-01-26 19:16:48.367 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 19:16:48.463 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.1543ms
+2026-01-26 19:18:19.834 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 59
+2026-01-26 19:18:19.846 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 19:18:19.866 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 19:18:19.881 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 19:18:19.955 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-01-26 19:18:20.046 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 19:18:20.070 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 19:18:20.080 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 194.1503ms
+2026-01-26 19:18:20.083 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 19:18:20.088 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 240.0751 ms
+2026-01-26 19:18:20.092 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 258.1721ms
+2026-01-26 19:19:20.508 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Admin/users - null null
+2026-01-26 19:19:20.542 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AdminController.Users (MiniErp.Api)'
+2026-01-26 19:19:20.548 -05:00 [INF] Route matched with {action = "Users", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Users() on controller MiniErp.Api.Controllers.AdminController (MiniErp.Api).
+2026-01-26 19:19:20.615 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Email", "a"."DisplayName"
+FROM "AspNetUsers" AS "a"
+2026-01-26 19:19:20.619 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType0`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], MiniErp.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-26 19:19:20.644 -05:00 [INF] Executed action MiniErp.Api.Controllers.AdminController.Users (MiniErp.Api) in 92.7654ms
+2026-01-26 19:19:20.646 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AdminController.Users (MiniErp.Api)'
+2026-01-26 19:19:20.649 -05:00 [INF] HTTP GET /api/Admin/users responded 200 in 136.9332 ms
+2026-01-26 19:19:20.652 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Admin/users - 200 null application/json; charset=utf-8 143.2957ms
+2026-01-26 19:21:02.939 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Admin/assign-role - application/json 73
+2026-01-26 19:21:02.946 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api)'
+2026-01-26 19:21:02.951 -05:00 [INF] Route matched with {action = "AssignRole", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignRole(AssignRoleDto) on controller MiniErp.Api.Controllers.AdminController (MiniErp.Api).
+2026-01-26 19:21:02.965 -05:00 [INF] Executed action MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api) in 11.5885ms
+2026-01-26 19:21:02.967 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api)'
+2026-01-26 19:21:02.968 -05:00 [ERR] HTTP POST /api/Admin/assign-role responded 500 in 25.8609 ms
+System.InvalidOperationException: Record type 'MiniErp.Api.Controllers.AdminController+AssignRoleDto' has validation metadata defined on property 'Role' that will be ignored. 'Role' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.Enumerator..ctor(ModelMetadata modelMetadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.GetChildren(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-01-26 19:21:02.983 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Record type 'MiniErp.Api.Controllers.AdminController+AssignRoleDto' has validation metadata defined on property 'Role' that will be ignored. 'Role' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.Enumerator..ctor(ModelMetadata modelMetadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.GetChildren(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-26 19:21:02.997 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Admin/assign-role - 500 null text/plain; charset=utf-8 58.2708ms
+2026-01-26 19:23:41.412 -05:00 [INF] Application is shutting down...
+2026-01-26 19:27:37.932 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 19:27:37.966 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-01-26 19:27:37.975 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-26 19:27:37.988 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-26 19:27:38.004 -05:00 [INF] User profile is available. Using 'C:\Users\HenrryVelez\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 19:27:38.135 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:27:38.168 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:27:38.171 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:27:38.179 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__adminEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Email" = @__adminEmail_0
+LIMIT 1
+2026-01-26 19:27:38.312 -05:00 [INF] Now listening on: http://localhost:5000
+2026-01-26 19:27:38.316 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 19:27:38.317 -05:00 [INF] Hosting environment: Development
+2026-01-26 19:27:38.318 -05:00 [INF] Content root path: D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Api
+2026-01-26 19:27:49.659 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Admin/assign-role - application/json 73
+2026-01-26 19:27:49.687 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-26 19:27:49.752 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api)'
+2026-01-26 19:27:49.769 -05:00 [INF] Route matched with {action = "AssignRole", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignRole(AssignRoleDto) on controller MiniErp.Api.Controllers.AdminController (MiniErp.Api).
+2026-01-26 19:27:49.851 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:27:49.878 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__get_Item_0
+LIMIT 1
+2026-01-26 19:27:49.886 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-01-26 19:27:49.897 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__get_Item_0 AND "a"."RoleId" = @__get_Item_1
+LIMIT 1
+2026-01-26 19:27:49.934 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2026-01-26 19:27:49.953 -05:00 [INF] Executed action MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api) in 178.3424ms
+2026-01-26 19:27:49.955 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api)'
+2026-01-26 19:27:49.958 -05:00 [INF] HTTP POST /api/Admin/assign-role responded 400 in 270.0627 ms
+2026-01-26 19:27:49.965 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Admin/assign-role - 400 null application/json; charset=utf-8 306.3484ms
+2026-01-26 19:28:13.963 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-01-26 19:28:14.017 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 54.6046ms
+2026-01-26 19:28:14.158 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-01-26 19:28:14.212 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.7502ms
+2026-01-26 19:29:16.569 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 59
+2026-01-26 19:29:16.581 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 19:29:16.588 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MiniErp.Api.Controllers.LoginDto) on controller MiniErp.Api.Controllers.AuthController (MiniErp.Api).
+2026-01-26 19:29:16.651 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-01-26 19:29:16.739 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-01-26 19:29:16.747 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 19:29:16.751 -05:00 [INF] Executed action MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api) in 161.7531ms
+2026-01-26 19:29:16.753 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AuthController.Login (MiniErp.Api)'
+2026-01-26 19:29:16.754 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 174.6973 ms
+2026-01-26 19:29:16.758 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 188.8575ms
+2026-01-26 19:29:45.213 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Admin/users - null null
+2026-01-26 19:29:45.221 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AdminController.Users (MiniErp.Api)'
+2026-01-26 19:29:45.223 -05:00 [INF] Route matched with {action = "Users", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Users() on controller MiniErp.Api.Controllers.AdminController (MiniErp.Api).
+2026-01-26 19:29:45.238 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Email", "a"."DisplayName"
+FROM "AspNetUsers" AS "a"
+2026-01-26 19:29:45.243 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType0`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], MiniErp.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-26 19:29:45.248 -05:00 [INF] Executed action MiniErp.Api.Controllers.AdminController.Users (MiniErp.Api) in 22.274ms
+2026-01-26 19:29:45.250 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AdminController.Users (MiniErp.Api)'
+2026-01-26 19:29:45.251 -05:00 [INF] HTTP GET /api/Admin/users responded 200 in 33.6047 ms
+2026-01-26 19:29:45.253 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Admin/users - 200 null application/json; charset=utf-8 39.8332ms
+2026-01-26 19:30:20.557 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Admin/assign-role - application/json 73
+2026-01-26 19:30:20.563 -05:00 [INF] Executing endpoint 'MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api)'
+2026-01-26 19:30:20.564 -05:00 [INF] Route matched with {action = "AssignRole", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignRole(AssignRoleDto) on controller MiniErp.Api.Controllers.AdminController (MiniErp.Api).
+2026-01-26 19:30:20.569 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-01-26 19:30:20.574 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DisplayName", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__get_Item_0
+LIMIT 1
+2026-01-26 19:30:20.579 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-01-26 19:30:20.581 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__get_Item_0 AND "a"."RoleId" = @__get_Item_1
+LIMIT 1
+2026-01-26 19:30:20.583 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2026-01-26 19:30:20.584 -05:00 [INF] Executed action MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api) in 18.1281ms
+2026-01-26 19:30:20.586 -05:00 [INF] Executed endpoint 'MiniErp.Api.Controllers.AdminController.AssignRole (MiniErp.Api)'
+2026-01-26 19:30:20.587 -05:00 [INF] HTTP POST /api/Admin/assign-role responded 400 in 25.5895 ms
+2026-01-26 19:30:20.589 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Admin/assign-role - 400 null application/json; charset=utf-8 32.3598ms
+2026-01-26 19:36:52.066 -05:00 [INF] Application is shutting down...
