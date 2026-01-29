@@ -14,6 +14,20 @@ using MiniErp.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// 1) Registrar CORS (perfil de desarrollo, abierto)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("FrontendDev", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:4200") // origen del dev server de Angular
+            .AllowAnyHeader()
+            .AllowAnyMethod();                     // GET, POST, PUT, DELETE, OPTIONS
+            //.AllowCredentials();                  // si más adelante usas cookies
+    });
+});
+
+
 // -----------------------------
 // 1) Serilog: logging estructurado
 // Lee config desde appsettings, enriquece con contexto y registra Serilog como logger del host
@@ -168,6 +182,10 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+var allowedOrigins = new[] { "http://localhost:4200" /* si usas https, añade "https://localhost:4200" */ };
+
+
+
 var app = builder.Build();
 
 // -----------------------------
@@ -194,7 +212,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseSerilogRequestLogging(); // logs de cada request/response con tiempos
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+
+app.UseCors("FrontendDev"); // aplica política de CORS
 
 app.UseAuthentication(); // valida tokens/identidad del usuario
 app.UseAuthorization();  // aplica roles/políticas
