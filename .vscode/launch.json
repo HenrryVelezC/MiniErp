@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Frontend Angular (PWA Chrome)",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}/minierp-web",
+      "sourceMaps": true,
+      "trace": true
+    },
+
+    {
+      "name": "Backend: Launch MiniErp.Api (.NET 8)",
+      "type": "coreclr",
+      "request": "launch",
+
+      // Ruta al DLL de la API (compilado Debug)
+      "program": "${workspaceFolder}/MiniErp.Api/bin/Debug/net8.0/MiniErp.Api.dll",
+
+      // Directorio de trabajo del proyecto API
+      "cwd": "${workspaceFolder}/MiniErp.Api",
+
+      // Variables de entorno típicas para dev
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+
+      // Abre el navegador cuando Kestrel dice "Now listening on:"
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+
+      // Opcional: consola integrada de VS Code
+      "console": "integratedTerminal",
+
+      // Si quieres asegurarte de que se buildée antes:
+      // "preLaunchTask": "build-api"
+    }
+
+  ]
+}

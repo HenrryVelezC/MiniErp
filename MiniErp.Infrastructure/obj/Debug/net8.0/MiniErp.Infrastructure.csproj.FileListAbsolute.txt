@@ -17,3 +17,4 @@ D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Infrastructure\obj\Debug\net8.0\re
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Infrastructure\obj\Debug\net8.0\MiniErp.Infrastructure.pdb
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Infrastructure\obj\Debug\net8.0\MiniErp.Infrastructure.genruntimeconfig.cache
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Infrastructure\obj\Debug\net8.0\ref\MiniErp.Infrastructure.dll
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Infrastructure\obj\Debug\net8.0\MiniErp.Infrastructure.sourcelink.json

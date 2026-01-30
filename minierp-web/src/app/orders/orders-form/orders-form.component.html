@@ -1,0 +1,58 @@
+<mat-card>
+  <h2>{{ isEdit ? 'Editar Orden' : 'Nueva Orden' }}</h2>
+
+  <div *ngIf="loading">Cargando...</div>
+
+  <form [formGroup]="form" *ngIf="!loading">
+
+    <mat-form-field appearance="outline" style="width: 100%;">
+      <mat-label>Cliente</mat-label>
+      <input matInput formControlName="customerName" />
+    </mat-form-field>
+
+    <h3>Ítems</h3>
+
+    <div formArrayName="items" style="display:flex; flex-direction:column; gap:12px;">
+      <div *ngFor="let g of items.controls; let i = index" [formGroupName]="i"
+           style="display:flex; gap:12px; align-items:center; flex-wrap: wrap;">
+
+        <mat-form-field appearance="outline" style="flex: 2;">
+          <mat-label>Producto</mat-label>
+          <input matInput formControlName="productName" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 120px;">
+          <mat-label>Cantidad</mat-label>
+          <input matInput type="number" formControlName="quantity" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 140px;">
+          <mat-label>Precio</mat-label>
+          <input matInput type="number" formControlName="unitPrice" />
+        </mat-form-field>
+
+        <button mat-icon-button color="warn" type="button" (click)="removeItem(i)">
+          <mat-icon>delete</mat-icon>
+        </button>
+
+      </div>
+    </div>
+
+    <div style="margin-top: 12px;">
+      <button mat-stroked-button type="button" (click)="addItem()">
+        <mat-icon>add</mat-icon>
+        Agregar ítem
+      </button>
+    </div>
+
+    <div style="margin-top: 18px; display:flex; gap:12px;">
+      <button mat-raised-button color="primary" type="button" (click)="save()" [disabled]="loading">
+        Guardar
+      </button>
+      <button mat-button type="button" (click)="cancel()">
+        Cancelar
+      </button>
+    </div>
+
+  </form>
+</mat-card>

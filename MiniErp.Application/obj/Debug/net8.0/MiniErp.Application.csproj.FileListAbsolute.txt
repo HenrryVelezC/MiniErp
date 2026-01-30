@@ -13,3 +13,4 @@ D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniE
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\refint\MiniErp.Application.dll
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.pdb
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\ref\MiniErp.Application.dll
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Application\obj\Debug\net8.0\MiniErp.Application.sourcelink.json

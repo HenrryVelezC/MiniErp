@@ -9,23 +9,46 @@ using MiniErp.Infrastructure.Persistence;
 
 namespace MiniErp.Infrastructure.Repositories
 {
-    /// <summary>Repositorio de Orders con EF Core (SQLite en dev).</summary>
+    
+    /// <summary>
+    /// Implementación del repositorio usando EF Core.
+    /// Esta clase vive en Infrastructure porque depende de EF Core
+    /// y del DbContext (dependencias externas).
+    /// </summary>
+
     public class OrderRepository : IOrderRepository
     {
-        private readonly AppDbContext _db;
+        private readonly AppDbContext _db;      //Esa línea declara una variable privada, de solo lectura, donde se guarda el DbContext que EF Core inyecta en el repositorio. Esa instancia se usa para consultar y modificar la base de datos.
 
-        public OrderRepository(AppDbContext db) => _db = db;
-
+        public OrderRepository(AppDbContext db){
+             _db = db;                          // Constructor: recibe el DbContext a través de Inyección de Dependencias.
+        }
+        
+        /// <summary>
+        /// Obtiene un pedido por Id, incluyendo sus ítems (relación 1-n).
+        /// AsNoTracking: optimiza lectura porque no lo vamos a modificar aquí.
+        /// </summary>
         public async Task<Order?> GetAsync(Guid id) =>
             await _db.Orders
-                     .Include(o => o.Items)
-                     .FirstOrDefaultAsync(o => o.Id == id);
+                .AsNoTracking()
+                .Include(o => o.Items)
+                .FirstOrDefaultAsync(o => o.Id == id);
 
-        public async Task<List<Order>> GetAllAsync() =>             // <- AQUÍ: sin '>' extra, con paréntesis
+
+        /// <summary>
+        /// Obtiene la lista completa de pedidos incluyendo ítems.
+        /// AsNoTracking: mejora performance.
+        /// </summary>
+        public async Task<List<Order>> GetAllAsync() => 
             await _db.Orders
-                     .Include(o => o.Items)
-                     .ToListAsync();
+                .AsNoTracking()
+                .Include(o => o.Items)
+                .ToListAsync();
 
+
+        /// <summary>
+        /// Crea un nuevo pedido y sus ítems.
+        /// </summary>
         public async Task<Order> CreateAsync(Order order)
         {
             _db.Orders.Add(order);
@@ -33,12 +56,21 @@ namespace MiniErp.Infrastructure.Repositories
             return order;
         }
 
+
+        /// <summary>
+        /// Actualiza un pedido existente.
+        /// EF Core se encarga de trackear los cambios.
+        /// </summary>
         public async Task UpdateAsync(Order order)
         {
             _db.Orders.Update(order);
             await _db.SaveChangesAsync();
         }
 
+
+        /// <summary>
+        /// Elimina un pedido si existe.
+        /// </summary>
         public async Task DeleteAsync(Guid id)
         {
             var existing = await _db.Orders.FirstOrDefaultAsync(o => o.Id == id);

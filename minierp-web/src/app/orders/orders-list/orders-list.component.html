@@ -1,0 +1,75 @@
+<!-- minierp-web/src/app/orders/orders-list/orders-list.component.html -->
+<mat-card>
+  <h2>Pedidos</h2>
+
+  <!-- Cargando -->
+  <div *ngIf="loading">
+    Pedidos cargando...
+  </div>
+
+  <!-- Error -->
+  <div *ngIf="!loading && errorMessage" style="color: red; margin-top: 12px;">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Vacío -->
+  <div *ngIf="!loading && !errorMessage && orders.length === 0" style="margin-top: 12px;">
+    No hay pedidos aún.
+  </div>
+
+  <div style="display:flex; justify-content:flex-end; margin-bottom:12px;">
+    <button mat-raised-button color="primary" routerLink="/app/orders/new">
+      Nuevo
+    </button>
+  </div>
+
+  <!-- Tabla -->
+  <table
+    mat-table
+    [dataSource]="orders"
+    class="mat-elevation-z1"
+    *ngIf="!loading && !errorMessage && orders.length > 0"
+    style="margin-top: 12px; width: 100%;"
+  >
+
+    <!-- Cliente -->
+    <ng-container matColumnDef="customer">
+      <th mat-header-cell *matHeaderCellDef>Cliente</th>
+      <td mat-cell *matCellDef="let row">{{ row.customerName }}</td>
+    </ng-container>
+
+    <!-- Fecha -->
+    <ng-container matColumnDef="createdAt">
+      <th mat-header-cell *matHeaderCellDef>Creado</th>
+      <td mat-cell *matCellDef="let row">{{ row.createdAt | date:'short' }}</td>
+    </ng-container>
+
+    <!-- Items -->
+    <ng-container matColumnDef="items">
+      <th mat-header-cell *matHeaderCellDef>Items</th>
+      <td mat-cell *matCellDef="let row">{{ row.items?.length || 0 }}</td>
+    </ng-container>
+
+    <!-- Acciones -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Acciones</th>
+      <td mat-cell *matCellDef="let row">
+        <button mat-button color="primary" (click)="view(row.id)">
+          Ver
+        </button>
+        
+        <button mat-button color="primary" [routerLink]="['/app/orders', row.id, 'edit']">
+          Editar
+        </button>
+
+        <button mat-button color="warn" (click)="remove(row.id)">
+          Eliminar
+        </button>
+
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</mat-card>

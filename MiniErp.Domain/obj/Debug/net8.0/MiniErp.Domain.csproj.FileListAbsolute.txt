@@ -9,3 +9,4 @@ D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Domain\obj\Debug\net8.0\MiniErp.Do
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Domain\obj\Debug\net8.0\refint\MiniErp.Domain.dll
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Domain\obj\Debug\net8.0\MiniErp.Domain.pdb
 D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Domain\obj\Debug\net8.0\ref\MiniErp.Domain.dll
+D:\Mis Proyectos\Learning\BGR\MiniErp\MiniErp.Domain\obj\Debug\net8.0\MiniErp.Domain.sourcelink.json
