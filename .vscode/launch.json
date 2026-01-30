@@ -19,7 +19,6 @@
       "name": "Backend: Launch MiniErp.Api (.NET 8)",
       "type": "coreclr",
       "request": "launch",
-
       // Ruta al DLL de la API (compilado Debug)
       "program": "${workspaceFolder}/MiniErp.Api/bin/Debug/net8.0/MiniErp.Api.dll",
 
