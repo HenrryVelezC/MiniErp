@@ -10,7 +10,8 @@ namespace MiniErp.Application.DTOs
     /// </summary>
     public record OrderReadDto(
         Guid Id,
-        string CustomerName,
+        Guid CustomerId,
+        string CustomerNameSnapshot,
         DateTime CreatedAt,
         List<OrderItemReadDto> Items
         );
@@ -29,7 +30,8 @@ namespace MiniErp.Application.DTOs
     /// DTO para creación/edición de pedidos (datos recibidos desde el cliente).
     /// </summary>
     public record OrderUpsertDto(
-        string CustomerName,
+        Guid CustomerId,
+        string CustomerNameSnapshot,
         List<OrderItemUpsertDto> Items
         );
     /// <summary>

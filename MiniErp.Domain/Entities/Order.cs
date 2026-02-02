@@ -16,7 +16,8 @@ namespace MiniErp.Domain.Entities
         public Guid Id { get; set; } = Guid.NewGuid();
 
         /// <summary>Cliente al que pertenece el pedido.</summary>
-        public string CustomerName { get; set; } = string.Empty;
+        public Guid CustomerId { get; set; }    
+        public string CustomerNameSnapshot { get; set; } = string.Empty;
 
         /// <summary>Fecha de creación del pedido (UTC).</summary>
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
@@ -31,8 +32,11 @@ namespace MiniErp.Domain.Entities
         // Si quieres validar que no se creen pedidos sin cliente ni ítems:
         public void Validate()
         {
-            if (string.IsNullOrWhiteSpace(CustomerName))
-                throw new DomainValidationException("CustomerName es requerido.");
+            if (CustomerId == Guid.Empty)
+                throw new DomainValidationException("CustomerId es requerido.");
+                
+            if (string.IsNullOrWhiteSpace(CustomerNameSnapshot))
+                throw new DomainValidationException("CustomerNameSnapshot es requerido.");
 
             if (Items == null || Items.Count == 0)
                 throw new DomainValidationException("El pedido debe tener al menos un ítem.");
