@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authorization;                 // [Authorize] para ex
 using Microsoft.AspNetCore.Mvc;                           // Tipos de MVC: ControllerBase, ActionResult, atributos HTTP
 using MiniErp.Application.Contracts;                      // Contrato del repositorio (IOrderRepository)
 using MiniErp.Application.DTOs;                           // DTOs: OrderReadDto, OrderUpsertDto, etc.
-using MiniErp.Domain.Entities;                            // Entidades de dominio: Order, OrderItem
 using System;                                             // Tipos básicos como Guid
 using System.Collections.Generic;                         // List<T>
 using System.Linq;                                        // LINQ: Select, Any, ToList
@@ -23,15 +22,16 @@ namespace MiniErp.Api.Controllers
     public class OrdersController : ControllerBase
     {
         // Campos privados readonly para dependencias (nomenclatura _camelCase)
-        private readonly IOrderRepository _repo;
+        private readonly IOrderService _service;
         private readonly ILogger<OrdersController> _logger;
+
 
         /// <summary>
         /// Constructor con dependencias provistas por DI.
         /// </summary>
-        public OrdersController(IOrderRepository repo, ILogger<OrdersController> logger)
+        public OrdersController(IOrderService service, ILogger<OrdersController> logger)
         {
-            _repo = repo;
+            _service = service;
             _logger = logger;
         }
 
@@ -41,24 +41,10 @@ namespace MiniErp.Api.Controllers
         [ProducesResponseType(401)]
         public async Task<ActionResult<List<OrderReadDto>>> Get()
         {
-            // Obtiene la lista desde el repositorio (incluye Items)
-            var list = await _repo.GetAllAsync();
 
-            // Mapeo manual a DTOs (en siguientes puntos usaremos AutoMapper)
-            var result = list.Select(o => new OrderReadDto(
-                o.Id,
-                o.CustomerName,
-                o.CreatedAt,
-                o.Items.Select(i => new OrderItemReadDto(
-                    i.Id,
-                    i.ProductName,
-                    i.Quantity,
-                    i.UnitPrice,
-                    i.LineTotal
-                )).ToList()
-            )).ToList();
-
-            return Ok(result);                              // 200 OK con DTOs
+            var result = await _service.GetAllAsync();
+            return Ok(result);
+                             // 200 OK con DTOs
         }
 
         /// <summary>Obtiene una orden por su Id (Guid).</summary>
@@ -68,23 +54,8 @@ namespace MiniErp.Api.Controllers
         [ProducesResponseType(401)]
         public async Task<ActionResult<OrderReadDto>> GetById(Guid id)
         {
-            var o = await _repo.GetAsync(id);              // Busca el agregado
-            if (o is null) return NotFound();              // 404 si no existe
-
-            // Mapeo manual a DTO de lectura
-            var dto = new OrderReadDto(
-                o.Id,
-                o.CustomerName,
-                o.CreatedAt,
-                o.Items.Select(i => new OrderItemReadDto(
-                    i.Id,
-                    i.ProductName,
-                    i.Quantity,
-                    i.UnitPrice,
-                    i.LineTotal
-                )).ToList()
-            );
-
+            var dto = await _service.GetAsync(id);              // Busca el agregado
+            if (dto is null) return NotFound();              // 404 si no existe
             return Ok(dto);                                 // 200 OK
         }
 
@@ -99,49 +70,17 @@ namespace MiniErp.Api.Controllers
         {
             // Validaciones mínimas de negocio (FluentValidation vendrá en el siguiente punto)
             if (dto is null) return BadRequest("Body requerido.");
-            if (string.IsNullOrWhiteSpace(dto.CustomerName))
-                return BadRequest("CustomerName es requerido.");
-            if (dto.Items is null || dto.Items.Count == 0)
-                return BadRequest("Debe incluir al menos un ítem.");
-            if (dto.Items.Any(x => x.Quantity <= 0))
-                return BadRequest("Quantity debe ser > 0.");
-            if (dto.Items.Any(x => x.UnitPrice < 0))
-                return BadRequest("UnitPrice debe ser >= 0.");
-
-            // Componer el agregado de dominio (maestro + detalle)
-            var order = new Order
-            {
-                CustomerName = dto.CustomerName,
-                Items = dto.Items.Select(x => new OrderItem
-                {
-                    ProductName = x.ProductName,
-                    Quantity = x.Quantity,
-                    UnitPrice = x.UnitPrice
-                }).ToList()
-            };
 
             // Persistir a través del repositorio
-            var created = await _repo.CreateAsync(order);
+            var created = await _service.CreateAsync(dto);
 
             // Log estructurado (Serilog) con propiedades nombradas
-            _logger.LogInformation("Order {OrderId} created for {Customer}", created.Id, created.CustomerName);
+            _logger.LogInformation(
+                "Order {OrderId} created for CustomerId {CustomerId}", created.Id, created.CustomerId);
 
-            // Mapear entidad creada a DTO de salida
-            var result = new OrderReadDto(
-                created.Id,
-                created.CustomerName,
-                created.CreatedAt,
-                created.Items.Select(i => new OrderItemReadDto(
-                    i.Id,
-                    i.ProductName,
-                    i.Quantity,
-                    i.UnitPrice,
-                    i.LineTotal
-                )).ToList()
-            );
 
             // 201 Created con Location apuntando a GET /api/orders/{id}
-            return CreatedAtAction(nameof(GetById), new { id = created.Id }, result);
+            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
         /// <summary>Actualiza una orden existente (reemplazo total del detalle).</summary>
@@ -156,36 +95,12 @@ namespace MiniErp.Api.Controllers
         {
             // Validaciones mínimas de negocio
             if (dto is null) return BadRequest("Body requerido.");
-            if (string.IsNullOrWhiteSpace(dto.CustomerName))
-                return BadRequest("CustomerName es requerido.");
-            if (dto.Items is null || dto.Items.Count == 0)
-                return BadRequest("Debe incluir al menos un ítem.");
-            if (dto.Items.Any(x => x.Quantity <= 0))
-                return BadRequest("Quantity debe ser > 0.");
-            if (dto.Items.Any(x => x.UnitPrice < 0))
-                return BadRequest("UnitPrice debe ser >= 0.");
-
-            // Comprobar existencia (mejor UX: devolver 404 si no existe)
-            var exists = await _repo.GetAsync(id);
-            if (exists is null) return NotFound();
 
             // Componer "nuevo estado" del agregado (el repositorio hará el reemplazo del detalle)
-            var toUpdate = new Order
-            {
-                Id = id,
-                CustomerName = dto.CustomerName,
-                Items = dto.Items.Select(x => new OrderItem
-                {
-                    ProductName = x.ProductName,
-                    Quantity = x.Quantity,
-                    UnitPrice = x.UnitPrice
-                }).ToList()
-            };
-
-            // Delegamos la lógica de sincronización al repositorio (mejor separación de capas)
-            await _repo.UpdateAsync(toUpdate);
+            var updated = await _service.UpdateAsync(id, dto);
 
             _logger.LogInformation("Order {OrderId} updated", id);
+
             return NoContent();                             // 204 sin body
         }
 
@@ -197,7 +112,7 @@ namespace MiniErp.Api.Controllers
         [ProducesResponseType(403)]
         public async Task<IActionResult> Delete(Guid id)
         {
-            await _repo.DeleteAsync(id);                   // Repositorio debe manejar inexistente de forma idempotente
+            await _service.DeleteAsync(id);                   // Servicio debe manejar inexistente de forma idempotente
             _logger.LogWarning("Order {OrderId} deleted", id);
             return NoContent();                             // 204
         }

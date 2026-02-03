@@ -10,9 +10,14 @@ using Serilog;
 using MiniErp.Infrastructure.Persistence;
 using MiniErp.Infrastructure;
 using MiniErp.Application.Contracts;
+using MiniErp.Application.Services;
 using MiniErp.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Repositorios (Infrastructure)
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
 
 // 1) Registrar CORS (perfil de desarrollo, abierto)
 builder.Services.AddCors(options =>
@@ -144,6 +149,7 @@ builder.Services.AddAuthorization(options =>
 // Vida Scoped (una instancia por request)
 // -----------------------------
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
 // -----------------------------
 // 7) Controllers + Swagger/OpenAPI
