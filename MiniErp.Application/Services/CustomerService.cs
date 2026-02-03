@@ -52,13 +52,9 @@ namespace MiniErp.Application.Services
             return true;
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task DeleteAsync(Guid id)
         {
-            var existing = await _repo.GetAsync(id);
-            if (existing is null) return false;
-
             await _repo.DeleteAsync(id);
-            return true;
         }
     }
 }

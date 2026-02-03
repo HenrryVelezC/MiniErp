@@ -94,11 +94,8 @@ namespace MiniErp.Api.Controllers
         [ProducesResponseType(403)]   // Sin permisos
         public async Task<IActionResult> Delete(Guid id)
         {
-            var deleted = await _service.DeleteAsync(id); // Elimina cliente
-            if (!deleted) return NotFound();               // 404 si no existe
-
+            await _service.DeleteAsync(id); // Elimina cliente
             _logger.LogInformation("Customer {CustomerId} deleted", id); // Log de auditoría
-
             return NoContent(); // HTTP 204
         }
     }

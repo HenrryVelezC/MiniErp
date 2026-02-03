@@ -11,6 +11,6 @@ namespace MiniErp.Application.Contracts
         Task<CustomerReadDto?> GetAsync(Guid id);
         Task<CustomerReadDto> CreateAsync(CustomerUpsertDto dto);
         Task<bool> UpdateAsync(Guid id, CustomerUpsertDto dto);
-        Task<bool> DeleteAsync(Guid Id);
+        Task DeleteAsync(Guid Id);
     }
 }

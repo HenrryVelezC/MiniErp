@@ -4,7 +4,6 @@ using MiniErp.Application.Contracts;                      // Contratos de servic
 using MiniErp.Application.DTOs;                           // DTOs: OrderReadDto, OrderUpsertDto, etc.
 using System;                                             // Tipos básicos como Guid
 using System.Collections.Generic;                         // List<T>
-using System.Linq;                                        // LINQ: Select, Any, ToList
 using System.Threading.Tasks;                             // Task y métodos async
 
 namespace MiniErp.Api.Controllers
@@ -43,8 +42,7 @@ namespace MiniErp.Api.Controllers
         {
 
             var result = await _service.GetAllAsync();
-            return Ok(result);
-                             // 200 OK con DTOs
+            return Ok(result);                          // 200 OK con DTOs
         }
 
         /// <summary>Obtiene una orden por su Id (Guid).</summary>

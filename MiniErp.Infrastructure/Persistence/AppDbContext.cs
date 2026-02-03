@@ -1,47 +1,54 @@
+using Microsoft.AspNetCore.Identity; // Identity: roles, usuarios, claims
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore; // DbContext base que integra Identity
+using Microsoft.EntityFrameworkCore; // EF Core
+using MiniErp.Domain.Entities; // Entidades de dominio
+using System; // Tipos base (Guid, etc.)
 
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using MiniErp.Domain.Entities;
-using System;
-
-namespace MiniErp.Infrastructure.Persistence
+namespace MiniErp.Infrastructure.Persistence // Capa Infrastructure: persistencia de datos
 {
     /// <summary>
     /// DbContext que integra Identity + entidades de dominio.
     /// </summary>
-    public class AppDbContext
-        : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>
+    public class AppDbContext // DbContext principal de la aplicación
+        : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid> // Hereda Identity con claves Guid
     {
-        public DbSet<Order> Orders => Set<Order>();
-        public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+        public DbSet<Customer> Customers { get; set; } // Tabla Customers
+        public DbSet<Order> Orders => Set<Order>(); // Tabla Orders (acceso tipado)
+        public DbSet<OrderItem> OrderItems => Set<OrderItem>(); // Tabla OrderItems
 
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { } // Constructor con DI
 
         /// <summary>
         /// Configuraciones de mapping (relaciones, restricciones).
         /// </summary>
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder builder) // Configuración del modelo EF
         {
-            base.OnModelCreating(builder);
+            base.OnModelCreating(builder); // Configuración base de Identity
 
             // Relación 1..N: Order -> OrderItems
-            builder.Entity<Order>()
-                .HasMany(o => o.Items)
-                .WithOne()
-                .HasForeignKey(i => i.OrderId)
-                .OnDelete(DeleteBehavior.Cascade);
+            builder.Entity<Order>() // Entidad Order
+                .HasMany(o => o.Items) // Un Order tiene muchos Items
+                .WithOne() // OrderItem no expone navegación inversa
+                .HasForeignKey(i => i.OrderId) // FK OrderId en OrderItem
+                .OnDelete(DeleteBehavior.Cascade); // Borrado en cascada
+
+            builder.Entity<Order>() // Entidad Order
+                .Property(o => o.CustomerId) // Propiedad CustomerId
+                .IsRequired(); // No permite NULL (orden siempre pertenece a un cliente)
+
+            builder.Entity<Order>() // Entidad Order
+                .HasIndex(o => o.CustomerId); // Índice para búsquedas por cliente
 
             // Reglas simples
-            builder.Entity<Order>()
-                .Property(o => o.CustomerName)
-                .HasMaxLength(200)
-                .IsRequired();
+            builder.Entity<Order>() // Entidad Order
+                .Property(o => o.CustomerNameSnapshot) // Snapshot del nombre del cliente
+                .HasMaxLength(200) // Longitud máxima
+                .IsRequired(); // Obligatorio
 
-            builder.Entity<OrderItem>()
-                .Property(i => i.ProductName)
-                .HasMaxLength(200)
-                .IsRequired();
+            builder.Entity<OrderItem>() // Entidad OrderItem
+                .Property(i => i.ProductName) // Nombre del producto
+                .HasMaxLength(200) // Longitud máxima
+                .IsRequired(); // Obligatorio
         }
     }
 }
