@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authorization;                 // [Authorize] para exigir JWT y roles
 using Microsoft.AspNetCore.Mvc;                           // Tipos de MVC: ControllerBase, ActionResult, atributos HTTP
-using MiniErp.Application.Contracts;                      // Contrato del repositorio (IOrderRepository)
+using MiniErp.Application.Contracts;                      // Contratos de servicios (IOrderService)
 using MiniErp.Application.DTOs;                           // DTOs: OrderReadDto, OrderUpsertDto, etc.
 using System;                                             // Tipos básicos como Guid
 using System.Collections.Generic;                         // List<T>
@@ -98,6 +98,7 @@ namespace MiniErp.Api.Controllers
 
             // Componer "nuevo estado" del agregado (el repositorio hará el reemplazo del detalle)
             var updated = await _service.UpdateAsync(id, dto);
+            if (!updated) return NotFound();                     // 404 si no existe
 
             _logger.LogInformation("Order {OrderId} updated", id);
 
