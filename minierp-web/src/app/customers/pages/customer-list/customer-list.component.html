@@ -1,0 +1,25 @@
+<h2>Customers</h2>
+<div *ngIf="loading">Loading customers...</div>
+
+<table *ngIf="!loading && customers.length > 0" border ="1" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customers">
+      <td>{{ customer.name }}</td>
+      <td>{{ customer.email }}</td>
+      <td>{{ customer.phone }}</td>
+      <td>{{ customer.address }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="!loading && customers.length === 0">
+  No customers found.
+</div>
