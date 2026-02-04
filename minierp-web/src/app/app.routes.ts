@@ -21,6 +21,8 @@ export const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       // por ahora: orders, luego aquí meteremos el menú / shell
+
+      // Rutas de órdenes
       {
         path: 'orders',
         loadComponent: () =>
@@ -36,6 +38,15 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./orders/orders-form/orders-form.component').then(m => m.OrdersFormComponent)
       },
+      
+      // Rutas de clientes
+      {
+        path: 'customers',
+        loadComponent:() =>
+          import('./customers/pages/customer-list/customer-list.component').then(m => m.CustomerListComponent)
+      },
+
+      // Rutas de administración
       {
         path: 'admin',
         loadComponent: () =>

@@ -1,32 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Observable, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
 import { CustomerService } from '../../services/customer.service';
 import { CustomerRead } from '../../models/customer-read.model';
-import { NgIf } from "../../../../../node_modules/@angular/common/types/_common_module-chunk";
-import { CommonModule } from '@angular/common';
-
 
 @Component({
   selector: 'app-customer-list',
-  templateUrl: './customer-list.component.html',
-  imports: [NgIf, CommonModule]
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './customer-list.component.html'
 })
-export class CustomerListComponent implements OnInit {
-  customers: CustomerRead[] = [];
-  loading = true;
+export class CustomerListComponent {
+  customers$: Observable<CustomerRead[]>;
+  error: string | null = null;
 
-  constructor(private customerService: CustomerService) {}
-
-  ngOnInit(): void {
-    this.customerService.getAll().subscribe({
-      next: (data) => {
-        this.customers = data;
-        this.loading = false;
-      },
-      error: (error) => {
-        console.error('Error fetching customers:', error);
-        this.loading = false;
-      }
-    });
+  constructor(private customerService: CustomerService) {
+    this.customers$ = this.customerService.getAll().pipe(
+      catchError(err => {
+        console.error('Error fetching customers:', err);
+        this.error = 'No se pudo cargar customers.';
+        return of([] as CustomerRead[]);
+      })
+    );
   }
-
 }

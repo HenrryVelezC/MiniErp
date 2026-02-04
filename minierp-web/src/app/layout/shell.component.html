@@ -5,7 +5,8 @@
     <h3 class="title">MiniERP</h3>
 
     <mat-nav-list>
-      <a mat-list-item routerLink="/app/orders">Pedidos</a>
+      <a mat-list-item routerLink="/app/orders" (click)="drawer.close()">Pedidos</a>
+      <a mat-list-item routerLink="/app/customers" (click)="drawer.close()">Clientes</a>
       <a mat-list-item routerLink="/app/admin">Admin</a>
     </mat-nav-list>
   </mat-sidenav>

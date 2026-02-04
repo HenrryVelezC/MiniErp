@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet,RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../auth/auth.service';
 
@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     RouterOutlet,
     MatSidenavModule,
     MatToolbarModule,
