@@ -1,0 +1,72 @@
+.page-card {
+  padding: 16px;
+}
+
+/* Header estilo Orders */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Estados */
+.loading,
+.empty {
+  margin-top: 12px;
+  color: #666;
+}
+
+.error {
+  margin-top: 12px;
+  color: #d32f2f;
+}
+
+/* Tabla */
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+.customers-table thead {
+  background-color: #fafafa;
+}
+
+.customers-table th {
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Filas */
+.customers-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.customers-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Acciones */
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.actions a {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+.actions a.danger {
+  color: #d32f2f;
+}

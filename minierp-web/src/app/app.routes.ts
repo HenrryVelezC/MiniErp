@@ -4,8 +4,6 @@ import { AuthGuard } from './auth/auth.guard';
 
 // ojo: ajusta el import del login según tu proyecto
 import { LoginComponent } from './auth/login/login.component';
-
-
 import { ShellComponent } from './layout/shell.component';
 
 
@@ -38,13 +36,20 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./orders/orders-form/orders-form.component').then(m => m.OrdersFormComponent)
       },
-      
+
       // Rutas de clientes
       {
         path: 'customers',
-        loadComponent:() =>
+        loadComponent: () =>
           import('./customers/pages/customer-list/customer-list.component').then(m => m.CustomerListComponent)
       },
+
+      {
+        path: 'customers/new',
+        loadComponent: () =>
+          import('./customers/pages/customer-create/customer-create.component').then(m => m.CustomerCreateComponent)
+      },
+
 
       // Rutas de administración
       {

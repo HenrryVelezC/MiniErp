@@ -5,12 +5,16 @@ import { catchError } from 'rxjs/operators';
 
 import { CustomerService } from '../../services/customer.service';
 import { CustomerRead } from '../../models/customer-read.model';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-customer-list',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './customer-list.component.html'
+  imports: [CommonModule, MatCardModule, MatButtonModule, RouterModule],
+  templateUrl: './customer-list.component.html',
+  styleUrls: ['./customer-list.component.scss']
 })
 export class CustomerListComponent {
   customers$: Observable<CustomerRead[]>;
